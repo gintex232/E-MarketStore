@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "nJCvM984vDJ8H7DOdRcRMndpONmyTeDdzIkF/cOOpJy7gXEFp8Du/zjwsoJRzLCNolL3cuL4qBNZAQhJWa+Dvw==",
+  "dgSpecHash": "PH/S2rJwQs9+Th2FVQnmDn7Ps2XpnMP39ghpCf/m/Us/V0BaT28loafFkezW95ELreV0bCarrzFtTkGYcLfqfA==",
   "success": true,
   "projectFilePath": "C:\\Users\\USER\\Desktop\\Projects\\E-MarketStore\\E_MarketStore\\E_MarketStore.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
