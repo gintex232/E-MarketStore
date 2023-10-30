@@ -1,15 +1,18 @@
 ﻿
+using E_Market.Services.AuthAPI.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace E_Market.Services.AuthAPI.Data
 {
-    public class AppDbContext : IdentityDbContext<IdentityUser>
+    public class AppDbContext : IdentityDbContext<AppUser>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
         }
+
+        public DbSet<AppUser> appUsers { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
