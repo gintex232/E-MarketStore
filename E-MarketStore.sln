@@ -13,7 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Market.Services.CouponAPI", "E-Market.Services.CouponAPI\E-Market.Services.CouponAPI.csproj", "{358C1D78-B497-4531-843E-74215DAD505D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E_MarketStore", "E_MarketStore\E_MarketStore.csproj", "{4AD6166C-A5F7-40B7-8205-8BE4649D5CF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E_MarketStore", "E_MarketStore\E_MarketStore.csproj", "{4AD6166C-A5F7-40B7-8205-8BE4649D5CF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E_Market.Services.AuthAPI", "E_Market.Services.AuthAPI\E_Market.Services.AuthAPI.csproj", "{2861E328-0807-4E7B-B1A7-682342DDFC3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{4AD6166C-A5F7-40B7-8205-8BE4649D5CF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AD6166C-A5F7-40B7-8205-8BE4649D5CF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AD6166C-A5F7-40B7-8205-8BE4649D5CF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2861E328-0807-4E7B-B1A7-682342DDFC3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2861E328-0807-4E7B-B1A7-682342DDFC3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2861E328-0807-4E7B-B1A7-682342DDFC3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2861E328-0807-4E7B-B1A7-682342DDFC3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +42,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{358C1D78-B497-4531-843E-74215DAD505D} = {4BC9BD6E-BEB0-4329-96F9-BB4F92B8B397}
 		{4AD6166C-A5F7-40B7-8205-8BE4649D5CF6} = {B38FE691-743B-4316-9B32-B6EBF2A6F2C5}
+		{2861E328-0807-4E7B-B1A7-682342DDFC3D} = {4BC9BD6E-BEB0-4329-96F9-BB4F92B8B397}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {470D9ABA-83FE-4B3D-9562-ADDA84A468DE}
