@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "erxbB4CrCLxHAZd+g3vO+3+35rlm54l4TPLhGuJSyQqme1HjU/LOV/txAccxnR8z7k8oBuWR1w+jONe3w+V/hw==",
+  "dgSpecHash": "uM8HqbrIUh2J1fXNTA1kWatf5DUPW7DtVcNoOCniYA0SswY5Z+XoPLfAmY60FDIAyV1ECQJ3up2q4eqWlyp6tg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\Desktop\\Projects\\E-MarketStore\\E_Market.Services.AuthAPI\\E_Market.Services.AuthAPI.csproj",
+  "projectFilePath": "C:\\Users\\USER\\Desktop\\Projects\\E-MarketStore\\E_Market.Services.AuthAPI\\E-Market.Services.AuthAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

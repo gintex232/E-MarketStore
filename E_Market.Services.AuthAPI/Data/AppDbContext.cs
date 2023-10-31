@@ -12,7 +12,7 @@ namespace E_Market.Services.AuthAPI.Data
         {
         }
 
-        public DbSet<AppUser> appUsers { get; set; }
+        public DbSet<AppUser> AppUsers { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

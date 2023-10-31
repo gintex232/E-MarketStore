@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\E-Market.Services.AuthAPI.props" />
+</Project>

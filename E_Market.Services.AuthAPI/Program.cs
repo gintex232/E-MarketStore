@@ -1,24 +1,32 @@
 using E_Market.Services.AuthAPI.Data;
 using E_Market.Services.AuthAPI.Models;
+using E_Market.Services.AuthAPI.Models.Dto;
+using E_Market.Services.AuthAPI.Service;
+using E_Market.Services.AuthAPI.Service.IService;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<AppDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
+
+builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection("ApiSettings: JwtOptions"));
+
+builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>() //as a bridge between entityframework core and identity
+    .AddDefaultTokenProviders();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<AppDbContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-});
+builder.Services.AddScoped <IAuthService, AuthService>();
 
-builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>() //as a bridge between entityframework core and identity
-    .AddDefaultTokenProviders();
+
 
 var app = builder.Build();
 
