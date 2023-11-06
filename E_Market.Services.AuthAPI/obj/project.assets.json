@@ -3619,9 +3619,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\Desktop\\Projects\\E-MarketStore\\E_Market.Services.AuthAPI\\E-Market.Services.AuthAPI.csproj",
-      "projectName": "E-Market.Services.AuthAPI",
-      "projectPath": "C:\\Users\\USER\\Desktop\\Projects\\E-MarketStore\\E_Market.Services.AuthAPI\\E-Market.Services.AuthAPI.csproj",
+      "projectUniqueName": "C:\\Users\\USER\\Desktop\\Projects\\E-MarketStore\\E_Market.Services.AuthAPI\\E_Market.Services.AuthAPI.csproj",
+      "projectName": "E_Market.Services.AuthAPI",
+      "projectPath": "C:\\Users\\USER\\Desktop\\Projects\\E-MarketStore\\E_Market.Services.AuthAPI\\E_Market.Services.AuthAPI.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\USER\\Desktop\\Projects\\E-MarketStore\\E_Market.Services.AuthAPI\\obj\\",
       "projectStyle": "PackageReference",

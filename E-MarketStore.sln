@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Market.Services.CouponAPI
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E_MarketStore", "E_MarketStore\E_MarketStore.csproj", "{4AD6166C-A5F7-40B7-8205-8BE4649D5CF6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Market.Services.AuthAPI", "E_Market.Services.AuthAPI\E-Market.Services.AuthAPI.csproj", "{2861E328-0807-4E7B-B1A7-682342DDFC3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E_Market.Services.AuthAPI", "E_Market.Services.AuthAPI\E_Market.Services.AuthAPI.csproj", "{2861E328-0807-4E7B-B1A7-682342DDFC3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
