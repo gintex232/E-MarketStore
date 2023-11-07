@@ -47,7 +47,7 @@ namespace E_Market.Services.AuthAPI.Controllers
             return Ok(_responseDto);
         }
 
-        [HttpPost("AssignRole")]
+        [HttpPost("assignRole")]
         public async Task<IActionResult> AssignRole([FromBody] RegisterRequestDto model)
         {
             var assignRoleSuccessful = await _authService.AssignRole(model.Email, model.Role.ToUpper());
