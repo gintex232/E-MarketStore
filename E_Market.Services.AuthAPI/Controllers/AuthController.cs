@@ -46,5 +46,18 @@ namespace E_Market.Services.AuthAPI.Controllers
             _responseDto.Result = loginResponse;
             return Ok(_responseDto);
         }
+
+        [HttpPost("AssignRole")]
+        public async Task<IActionResult> AssignRole([FromBody] RegisterRequestDto model)
+        {
+            var assignRoleSuccessful = await _authService.AssignRole(model.Email, model.Role.ToUpper());
+            if (!assignRoleSuccessful)
+            {
+                _responseDto.IsSuccess = false;
+                _responseDto.Message = "Error encountered";
+                return BadRequest(_responseDto);
+            }
+            return Ok(_responseDto);
+        }
     }
 }
