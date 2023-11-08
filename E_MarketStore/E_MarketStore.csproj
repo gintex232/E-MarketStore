@@ -10,4 +10,9 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\E_Market.Services.AuthAPI\E_Market.Services.AuthAPI.csproj" />
+    <ProjectReference Include="..\E_MarketStore.Web\E_MarketStore.Web.csproj" />
+  </ItemGroup>
+
 </Project>

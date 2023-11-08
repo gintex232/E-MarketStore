@@ -31,3 +31,4 @@ C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore\obj\Debug\net7.0\refi
 C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore\obj\Debug\net7.0\E_MarketStore.pdb
 C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore\obj\Debug\net7.0\E_MarketStore.genruntimeconfig.cache
 C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore\obj\Debug\net7.0\ref\E_MarketStore.dll
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore\obj\Debug\net7.0\E_MarketStore.MvcApplicationPartsAssemblyInfo.cs

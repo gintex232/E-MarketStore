@@ -1,10 +1,9 @@
-﻿using E_MarketStore.Models;
-using E_MarketStore.Service.IService;
+﻿using E_MarketStore.Service.IService;
+using E_MarketStore.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using System.Collections.Generic;
 
-namespace E_MarketStore.Controllers
+namespace E_MarketStore.Web.Controllers
 {
     public class CouponController : Controller
     {

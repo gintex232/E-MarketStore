@@ -1,8 +1,7 @@
-﻿using E_MarketStore.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace E_MarketStore.Controllers
+namespace E_MarketStore.Web.Controllers
 {
     public class HomeController : Controller
     {
