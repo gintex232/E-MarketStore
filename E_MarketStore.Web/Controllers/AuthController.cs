@@ -101,9 +101,11 @@ namespace E_MarketStore.Web.Controllers
             return View(obj);
         }
 
-        public IActionResult Logout()
+        public async Task<IActionResult> Logout()
         {
-            return View();
+            await HttpContext.SignOutAsync();
+            _tokenProvider.ClearToken();
+            return RedirectToAction("Index", "Home");
         }
 
         //steps needed to signin a user using .net identity
