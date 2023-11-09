@@ -15,7 +15,7 @@ namespace E_Market.Services.AuthAPI.Service
         {
             _config = config;
         }
-        public string GenerateToken(AppUser appUser)
+        public string GenerateToken(AppUser appUser, IEnumerable<string> roles)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
 
@@ -28,6 +28,8 @@ namespace E_Market.Services.AuthAPI.Service
                 new Claim(JwtRegisteredClaimNames.Sub, appUser.Id),
                 new Claim(JwtRegisteredClaimNames.Name, appUser.UserName)
             };
+
+            claimList.AddRange(roles.Select(role => new Claim(ClaimTypes.Role, role)));
 
             var tokenDescriptor = new SecurityTokenDescriptor
             {

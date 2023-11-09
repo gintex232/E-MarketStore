@@ -20,32 +20,32 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 //builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection("ApiSettings: JwtOptions"));
 
-builder.Services.AddSwaggerGen(options =>
-{
-    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-    {
-        Description = "Fast api",
-        Name = "Authorization",
-        Type = SecuritySchemeType.ApiKey,
-        BearerFormat = "JWT",
-        In = ParameterLocation.Header,
-        Scheme = "Bearer"
-    });
-    options.AddSecurityRequirement(new OpenApiSecurityRequirement
-    {
-        {
-            new OpenApiSecurityScheme
-            {
-                Reference = new OpenApiReference
-                {
-                    Type = ReferenceType.SecurityScheme,
-                    Id = "Bearer"
-                }
-            },
-            new string[] { }
-        }
-    });
-});
+builder.Services.AddSwaggerGen(); //options =>
+//{
+//    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+//    {
+//        Description = "Fast api",
+//        Name = "Authorization",
+//        Type = SecuritySchemeType.ApiKey,
+//        BearerFormat = "JWT",
+//        In = ParameterLocation.Header,
+//        Scheme = "Bearer"
+//    });
+//    options.AddSecurityRequirement(new OpenApiSecurityRequirement
+//    {
+//        {
+//            new OpenApiSecurityScheme
+//            {
+//                Reference = new OpenApiReference
+//                {
+//                    Type = ReferenceType.SecurityScheme,
+//                    Id = "Bearer"
+//                }
+//            },
+//            new string[] { }
+//        }
+//    });
+//});
 
 builder.Services.AddAuthentication(options =>
 {

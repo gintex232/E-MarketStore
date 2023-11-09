@@ -1,13 +1,15 @@
 ﻿using AutoMapper;
 using E_Market.Services.CouponAPI.Data;
 using E_Market.Services.CouponAPI.Models;
-using E_Market.Services.CouponAPI.Models.Dto; 
+using E_Market.Services.CouponAPI.Models.Dto;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace E_Market.Services.CouponAPI.Controllers
 {
     [Route("api/coupon")]
     [ApiController]
+    [Authorize]
     public class CouponAPIController : ControllerBase
     {
         private readonly AppDbContext _db;
