@@ -1,4 +1,5 @@
 using E_Market.Services.AuthAPI.Data;
+using E_Market.Services.AuthAPI.Extensions;
 using E_Market.Services.AuthAPI.Models;
 using E_Market.Services.AuthAPI.Models.Dto;
 using E_Market.Services.AuthAPI.Service;
@@ -47,23 +48,7 @@ builder.Services.AddSwaggerGen(); //options =>
 //    });
 //});
 
-builder.Services.AddAuthentication(options =>
-{
-    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-}).AddJwtBearer(options =>
-{
-    var key = Encoding.UTF8.GetBytes(builder.Configuration.GetSection("JWT:Key").Value);
-    options.TokenValidationParameters = new TokenValidationParameters
-    {
-        ValidateIssuerSigningKey = true,
-        IssuerSigningKey = new SymmetricSecurityKey(key),
-        ValidateLifetime = true,
-        ValidateAudience = false,
-        ValidateIssuer = false
-    };
-});
+
 
 builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>() //as a bridge between entityframework core and identity
     .AddDefaultTokenProviders();
@@ -78,7 +63,9 @@ builder.Services.AddEndpointsApiExplorer();
 
 
 
+builder.AddAppAuthentication();
 
+builder.Services.AddAuthorization();
 
 
 var app = builder.Build();

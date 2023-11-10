@@ -19,7 +19,7 @@ namespace E_MarketStore.Web.Service
                 ApiType = Enums.ApiType.POST,
                 Data = loginRequest,
                 Url = Enums.AuthAPIBase + "/api/auth/login"
-            });
+            }, withBearer: false);
         }
 
         public async Task<ResponseDto?> RegisterAsync(RegisterRequestDto registerRequestDto)
@@ -29,7 +29,7 @@ namespace E_MarketStore.Web.Service
                 ApiType = Enums.ApiType.POST,
                 Data = registerRequestDto,
                 Url = Enums.AuthAPIBase + "/api/auth/register"
-            });
+            }, withBearer: false);
         }
 
         public async Task<ResponseDto?> AssignRoleAsync(RegisterRequestDto registerRequestDto)

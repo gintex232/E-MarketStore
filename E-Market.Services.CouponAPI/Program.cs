@@ -1,6 +1,7 @@
 using AutoMapper;
 using E_Market.Services.CouponAPI;
 using E_Market.Services.CouponAPI.Data;
+using E_Market.Services.CouponAPI.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -49,30 +50,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
-var key = builder.Configuration.GetValue<string>("JWT:Key");
-var audience = builder.Configuration.GetValue<string>("JWT:Audience");
-var issuer = builder.Configuration.GetValue<string>("JWT:Issuer");
+builder.AddAppAuthentication();
 
-builder.Services.AddAuthentication(options =>
-{
-    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-}).AddJwtBearer(options =>
-{
-    var key = Encoding.UTF8.GetBytes(builder.Configuration.GetSection("JWT:Key").Value);
-    options.TokenValidationParameters = new TokenValidationParameters
-    {
-        ValidateIssuerSigningKey = true,
-        IssuerSigningKey = new SymmetricSecurityKey(key),
-        ValidateIssuer = true,
-        ValidIssuer = issuer,
-        ValidateLifetime = true,
-        ValidateAudience = true,
-        ValidAudience = audience
-        
-    };
-});
 builder.Services.AddAuthorization();
 
 var app = builder.Build();
