@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E_Market.Services.AuthAPI",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E_MarketStore.Web", "E_MarketStore.Web\E_MarketStore.Web.csproj", "{40A26496-E49D-4519-88AC-FC3DBD6FDE49}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E_MarketStoreProductAPI", "E_MarketStoreProductAPI\E_MarketStoreProductAPI.csproj", "{D2D71478-5A90-4903-8F55-3D5A85FAE7BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{40A26496-E49D-4519-88AC-FC3DBD6FDE49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40A26496-E49D-4519-88AC-FC3DBD6FDE49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40A26496-E49D-4519-88AC-FC3DBD6FDE49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2D71478-5A90-4903-8F55-3D5A85FAE7BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2D71478-5A90-4903-8F55-3D5A85FAE7BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2D71478-5A90-4903-8F55-3D5A85FAE7BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2D71478-5A90-4903-8F55-3D5A85FAE7BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{358C1D78-B497-4531-843E-74215DAD505D} = {4BC9BD6E-BEB0-4329-96F9-BB4F92B8B397}
 		{2861E328-0807-4E7B-B1A7-682342DDFC3D} = {4BC9BD6E-BEB0-4329-96F9-BB4F92B8B397}
 		{40A26496-E49D-4519-88AC-FC3DBD6FDE49} = {B38FE691-743B-4316-9B32-B6EBF2A6F2C5}
+		{D2D71478-5A90-4903-8F55-3D5A85FAE7BD} = {4BC9BD6E-BEB0-4329-96F9-BB4F92B8B397}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {470D9ABA-83FE-4B3D-9562-ADDA84A468DE}
