@@ -13,13 +13,13 @@ namespace E_MarketStore.Services.ShoppingCartAPI.Controllers
     [ApiController]
     public class CartAPIController : ControllerBase
     {
-        private ResponseDto _responseDto;
+        private ResponseDto _response;
         private IMapper _mapper;
         private readonly AppDbContext _db;
 
         public CartAPIController(IMapper mapper, AppDbContext db)
         {
-            this._responseDto = new ResponseDto();
+            this._response = new ResponseDto();
             _mapper = mapper;
             _db = db;
         }
@@ -29,7 +29,8 @@ namespace E_MarketStore.Services.ShoppingCartAPI.Controllers
         {
             try
             {
-                var cartHeaderFromDb = await _db.CartHeaders.AsNoTracking().FirstOrDefaultAsync(u => u.UserId == cartDto.CartHeader.UserId);
+                var cartHeaderFromDb = await _db.CartHeaders.AsNoTracking()
+                    .FirstOrDefaultAsync(u => u.UserId == cartDto.CartHeader.UserId);
                 if (cartHeaderFromDb == null)
                 {
                     //Create header and details
@@ -65,15 +66,15 @@ namespace E_MarketStore.Services.ShoppingCartAPI.Controllers
                         await _db.SaveChangesAsync();
                     }
                 }
-                _responseDto.Result = cartDto;
+                _response.Result = cartDto;
 
             }
             catch (Exception ex)
             {
-                _responseDto.Message = ex.Message.ToString();
-                _responseDto.IsSuccess = false;
+                _response.Message = ex.Message.ToString();
+                _response.IsSuccess = false;
             }
-            return _responseDto;
+            return _response;
         }
     }
 }

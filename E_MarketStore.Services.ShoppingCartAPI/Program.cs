@@ -3,9 +3,7 @@ using E_MarketStore.Services.ShoppingCartAPI;
 using E_MarketStore.Services.ShoppingCartAPI.Data;
 using E_MarketStore.Services.ShoppingCartAPI.Extensions;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 

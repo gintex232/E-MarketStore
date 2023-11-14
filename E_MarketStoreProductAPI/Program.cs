@@ -2,11 +2,8 @@ using AutoMapper;
 using E_Market.Services.ProductAPI.Extensions;
 using E_MarketStoreProductAPI;
 using E_MarketStoreProductAPI.Data;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
