@@ -77,3 +77,4 @@ C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.ShoppingCart
 C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.ShoppingCartAPI\obj\Debug\net7.0\E_MarketStore.Services.ShoppingCartAPI.pdb
 C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.ShoppingCartAPI\obj\Debug\net7.0\E_MarketStore.Services.ShoppingCartAPI.genruntimeconfig.cache
 C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.ShoppingCartAPI\obj\Debug\net7.0\ref\E_MarketStore.Services.ShoppingCartAPI.dll
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.ShoppingCartAPI\bin\Debug\net7.0\Newtonsoft.Json.dll

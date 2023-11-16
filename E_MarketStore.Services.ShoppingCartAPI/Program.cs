@@ -2,6 +2,8 @@ using AutoMapper;
 using E_MarketStore.Services.ShoppingCartAPI;
 using E_MarketStore.Services.ShoppingCartAPI.Data;
 using E_MarketStore.Services.ShoppingCartAPI.Extensions;
+using E_MarketStore.Services.ShoppingCartAPI.Service;
+using E_MarketStore.Services.ShoppingCartAPI.Service.IService;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
@@ -41,6 +43,8 @@ builder.Services.AddSwaggerGen(options =>
 IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
 builder.Services.AddSingleton(mapper);
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddHttpClient("Product", u => u.BaseAddress = new Uri(builder.Configuration["ServiceUrls:ProductAPI"]));
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
