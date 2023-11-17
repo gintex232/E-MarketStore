@@ -10,8 +10,8 @@ namespace E_Market.Services.CouponAPI
         {
             var mappingConfig = new MapperConfiguration(Config =>
             {
-                Config.CreateMap<CouponDto, Coupon>();
-                Config.CreateMap<Coupon, CouponDto>();
+                Config.CreateMap<CouponDto, Coupon>().ReverseMap();
+                Config.CreateMap<Coupon, CouponDto>().ReverseMap();
             });
             return mappingConfig;
         }

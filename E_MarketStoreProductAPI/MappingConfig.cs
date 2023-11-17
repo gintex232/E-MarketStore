@@ -10,7 +10,7 @@ namespace E_MarketStoreProductAPI
         {
             var mappingConfig = new MapperConfiguration(Config =>
             {
-                Config.CreateMap<ProductDto, Product>();
+                Config.CreateMap<ProductDto, Product>().ReverseMap();
             });
             return mappingConfig;
         }
