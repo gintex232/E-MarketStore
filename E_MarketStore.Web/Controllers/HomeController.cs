@@ -10,10 +10,12 @@ namespace E_MarketStore.Web.Controllers
     public class HomeController : Controller
     {
         private readonly IProductService _productService;
+        private readonly ICartService _cartService;
 
-        public HomeController(IProductService productService)
+        public HomeController(IProductService productService, ICartService cartService)
         {
             _productService = productService;
+            _cartService = cartService;
         }
 
         public async Task<IActionResult> Index()
@@ -35,6 +37,33 @@ namespace E_MarketStore.Web.Controllers
 
         [Authorize]
         public async Task<IActionResult>ProductDetails(int productId)
+        {
+            CartDto cartDto = new CartDto()
+            {
+                CartHeader = new CartHeaderDto
+                {
+                    UserId = User.Claims.Where(u => u.Type)
+                }
+                
+            }
+
+            ResponseDto? response = await _productService.GetProductByIdAsync(productId);
+
+            if (response != null && response.IsSuccess)
+            {
+                model = JsonConvert.DeserializeObject<ProductDto>(Convert.ToString(response.Result));
+            }
+            else
+            {
+                TempData["error"] = response?.Message;
+            }
+            return View(model);
+        }
+
+        [Authorize]
+        [HttpPost]
+        [ActionName("ProductDetails")]
+        public async Task<IActionResult> ProductDetails(ProductDto productDto)
         {
             ProductDto? model = new();
 

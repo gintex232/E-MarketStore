@@ -1,28 +1,54 @@
 ﻿using E_MarketStore.Web.Models;
 using E_MarketStore.Web.Service.IService;
+using E_MarketStore.Web.Utility;
 
 namespace E_MarketStore.Web.Service
 {
     public class CartService : ICartService
     {
-        public Task<ResponseDto?> ApplyCouponAsync(CartDto cartDto)
+        private readonly IBaseService _baseService;
+
+        public CartService(IBaseService baseService)
         {
-            throw new NotImplementedException();
+            _baseService = baseService;
+        }
+        public async Task<ResponseDto?> ApplyCouponAsync(CartDto cartDto)
+        {
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = Enums.ApiType.POST,
+                Data = cartDto,
+                Url = Enums.ShoppingCartAPIBase + "/api/cart/ApplyCoupon"
+            });
         }
 
-        public Task<ResponseDto?> GetCartByUserIdAsync(string UserId)
+        public async Task<ResponseDto?> GetCartByUserIdAsync(string userId)
         {
-            throw new NotImplementedException();
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = Enums.ApiType.POST,
+                Url = Enums.ShoppingCartAPIBase + "/api/cart/GetCart"+ userId
+            });
         }
 
-        public Task<ResponseDto?> RemoveFromCartAsync(int cartDetailsId)
+        public async Task<ResponseDto?> RemoveFromCartAsync(int cartDetailsId)
         {
-            throw new NotImplementedException();
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = Enums.ApiType.POST,
+                Data = cartDetailsId,
+                Url = Enums.ShoppingCartAPIBase + "/api/cart/RemoveCart"
+            });
         }
 
-        public Task<ResponseDto?> UpsertCartAsync(CartDto cartDto)
+        public async Task<ResponseDto?> UpsertCartAsync(CartDto cartDto)
         {
-            throw new NotImplementedException();
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = Enums.ApiType.POST,
+                Data = cartDto,
+                Url = Enums.ShoppingCartAPIBase + "/api/cart/CartUpsert"
+            });
         }
     }
 }
