@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Diagnostics;
+using E_MarketStore.Web.Utility;
+using IdentityModel;
 
 namespace E_MarketStore.Web.Controllers
 {
@@ -38,14 +40,7 @@ namespace E_MarketStore.Web.Controllers
         [Authorize]
         public async Task<IActionResult>ProductDetails(int productId)
         {
-            CartDto cartDto = new CartDto()
-            {
-                CartHeader = new CartHeaderDto
-                {
-                    UserId = User.Claims.Where(u => u.Type)
-                }
-                
-            }
+            ProductDto? model = new();
 
             ResponseDto? response = await _productService.GetProductByIdAsync(productId);
 
@@ -65,19 +60,35 @@ namespace E_MarketStore.Web.Controllers
         [ActionName("ProductDetails")]
         public async Task<IActionResult> ProductDetails(ProductDto productDto)
         {
-            ProductDto? model = new();
+            CartDto cartDto = new CartDto()
+            {
+                CartHeader = new CartHeaderDto
+                {
+                    UserId = User.Claims.Where(u => u.Type == JwtClaimTypes.Subject)?.FirstOrDefault()?.Value
+                }
+            };
 
-            ResponseDto? response = await _productService.GetProductByIdAsync(productId);
+            CartDetailsDto cartDetails = new CartDetailsDto()
+            {
+                Count = productDto.Count,
+                ProductId = productDto.ProductId,
+            };
+
+            List<CartDetailsDto> cartDetailsDtos = new() { cartDetails };
+            cartDto.CartDetails = cartDetailsDtos;
+
+            ResponseDto? response = await _cartService.UpsertCartAsync(cartDto);
 
             if (response != null && response.IsSuccess)
             {
-                model = JsonConvert.DeserializeObject<ProductDto>(Convert.ToString(response.Result));
+                TempData["success"] = "Item has ben added to the Shopping Cart";
+                return RedirectToAction(nameof(Index));
             }
             else
             {
                 TempData["error"] = response?.Message;
             }
-            return View(model);
+            return View(productDto);
         }
 
         public IActionResult Privacy()

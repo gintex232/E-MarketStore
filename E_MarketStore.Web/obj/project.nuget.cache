@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "kKuttD3UlHwsB5HJOQwzsMo0NuUSP0C2c7G2OKFTIJ2KqbInWQa9xrBGU6pi193mgiXjFmcx4NU/vKWhqMlTZg==",
+  "dgSpecHash": "d0ncGT1Tym0Ybf0q5xdOwNnXBHx0ov9xDjkq4NnXtSeOx/62tPjh5lYIqcfCa7tzA8sN8UEE9YsKsCeMGqWQzg==",
   "success": true,
   "projectFilePath": "C:\\Users\\USER\\Desktop\\Projects\\E-MarketStore\\E_MarketStore.Web\\E_MarketStore.Web.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\identitymodel\\6.2.0\\identitymodel.6.2.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.0.3\\microsoft.identitymodel.abstractions.7.0.3.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.0.3\\microsoft.identitymodel.jsonwebtokens.7.0.3.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.identitymodel.logging\\7.0.3\\microsoft.identitymodel.logging.7.0.3.nupkg.sha512",

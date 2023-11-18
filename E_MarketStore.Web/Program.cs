@@ -18,7 +18,7 @@ builder.Services.AddHttpClient<ICartService, CartService>();
 Enums.CouponAPIBase = builder.Configuration["ServiceUrls:CouponAPI"];
 Enums.AuthAPIBase = builder.Configuration["ServiceUrls:AuthAPI"];
 Enums.ProductAPIBase = builder.Configuration["ServiceUrls:ProductAPI"];
-Enums.ShoppingCartAPIBase = builder.Configuration["ServiceUrls:ShoppinCartAPI"];
+Enums.ShoppingCartAPIBase = builder.Configuration["ServiceUrls:ShoppingCartAPI"];
 
 
 builder.Services.AddScoped<IBaseService, BaseService>();

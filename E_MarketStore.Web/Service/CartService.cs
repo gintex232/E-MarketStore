@@ -26,8 +26,8 @@ namespace E_MarketStore.Web.Service
         {
             return await _baseService.SendAsync(new RequestDto()
             {
-                ApiType = Enums.ApiType.POST,
-                Url = Enums.ShoppingCartAPIBase + "/api/cart/GetCart"+ userId
+                ApiType = Enums.ApiType.GET,
+                Url = Enums.ShoppingCartAPIBase + "/api/cart/GetCart/"+ userId
             });
         }
 

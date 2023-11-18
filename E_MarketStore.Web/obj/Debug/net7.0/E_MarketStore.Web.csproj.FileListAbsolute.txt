@@ -36,3 +36,4 @@ C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Web\bin\Debug\net7.0\
 C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Web\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Web\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Web\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Web\bin\Debug\net7.0\IdentityModel.dll
