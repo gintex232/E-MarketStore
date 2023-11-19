@@ -4,19 +4,22 @@ using E_MarketStore.Services.ShoppingCartAPI.Data;
 using E_MarketStore.Services.ShoppingCartAPI.Extensions;
 using E_MarketStore.Services.ShoppingCartAPI.Service;
 using E_MarketStore.Services.ShoppingCartAPI.Service.IService;
+using E_MarketStore.Services.ShoppingCartAPI.Utility;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddHttpClient("Product", u => u.BaseAddress =  new Uri(builder.Configuration["ServiceUrls:ProductAPI"]));
-builder.Services.AddHttpClient("Coupon", u => u.BaseAddress = new Uri(builder.Configuration["ServiceUrls:CouponAPI"]));
+builder.Services.AddHttpClient("Product", u => u.BaseAddress =  new Uri(builder.Configuration["ServiceUrls:ProductAPI"])).AddHttpMessageHandler<BackendApiAuthenticationHttpClientHandler>();
+builder.Services.AddHttpClient("Coupon", u => u.BaseAddress = new Uri(builder.Configuration["ServiceUrls:CouponAPI"])).AddHttpMessageHandler<BackendApiAuthenticationHttpClientHandler>();
 IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
 builder.Services.AddSingleton(mapper);
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ICouponService, CouponService>();
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<BackendApiAuthenticationHttpClientHandler>();
 
 
 builder.Services.AddDbContext<AppDbContext>(options =>
