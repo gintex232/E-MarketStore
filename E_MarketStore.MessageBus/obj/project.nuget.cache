@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "A9g1A/XiJHGtX2y9CNYdRFkVA4RAD716nAIU/APCAuMPjN7iwbcooqiqZGkxaALo/EGTeaV+gNt1mw7x4VO28w==",
+  "dgSpecHash": "ujx2/UiVBANZ/VLzK9ts77vHBjqbeDKk843zWJUwnQlHiqKsczmjqdrGNa3CZrThVb/14Q+nuQPBLzmFAEMPsQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\USER\\Desktop\\Projects\\E-MarketStore\\E_MarketStore.MessageBus\\E_MarketStore.MessageBus.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\USER\\.nuget\\packages\\azure.messaging.servicebus\\7.17.0\\azure.messaging.servicebus.7.17.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.azure.amqp\\2.6.3\\microsoft.azure.amqp.2.6.3.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
