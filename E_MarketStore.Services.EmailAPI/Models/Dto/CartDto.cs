@@ -5,5 +5,6 @@
     //}
 
     public record CartDto(
-        );
+        CartHeaderDto CartHeader,
+        IEnumerable<CartDetailsDto>? CartDetails);
 }
