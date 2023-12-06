@@ -1,0 +1,5 @@
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.MessageBus\obj\Debug\net7.0\E_MarketStore.MessageBus.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.MessageBus\obj\Debug\net7.0\E_MarketStore.MessageBus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.MessageBus\obj\Debug\net7.0\E_MarketStore.MessageBus.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.MessageBus\obj\Debug\net7.0\E_MarketStore.MessageBus.AssemblyInfo.cs
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.MessageBus\obj\Debug\net7.0\E_MarketStore.MessageBus.csproj.CoreCompileInputs.cache

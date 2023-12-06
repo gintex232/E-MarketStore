@@ -1,0 +1,7 @@
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.EmailAPI\obj\Debug\net7.0\E_MarketStore.Services.EmailAPI.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.EmailAPI\obj\Debug\net7.0\E_MarketStore.Services.EmailAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.EmailAPI\obj\Debug\net7.0\E_MarketStore.Services.EmailAPI.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.EmailAPI\obj\Debug\net7.0\E_MarketStore.Services.EmailAPI.AssemblyInfo.cs
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.EmailAPI\obj\Debug\net7.0\E_MarketStore.Services.EmailAPI.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.EmailAPI\obj\Debug\net7.0\E_MarketStore.Services.EmailAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.EmailAPI\obj\Debug\net7.0\E_MarketStore.Services.EmailAPI.MvcApplicationPartsAssemblyInfo.cache
