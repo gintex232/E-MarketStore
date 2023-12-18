@@ -1,5 +1,6 @@
 ﻿using E_MarketStore.Web.Models;
 using E_MarketStore.Web.Service.IService;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.IdentityModel.Tokens.Jwt;
@@ -14,6 +15,8 @@ namespace E_MarketStore.Web.Controllers
         {
             _cartService = cartService; 
         }
+
+        [Authorize]
         public async Task<IActionResult> CartIndex()
         {
             return View(await LoadCartDtoBasedOnLoggedInUser());
@@ -31,6 +34,7 @@ namespace E_MarketStore.Web.Controllers
             return View();
         }
 
+        [HttpPost]
         public async Task<IActionResult> ApplyCoupon(CartDto cartDto)
         {
             ResponseDto? response = await _cartService.ApplyCouponAsync(cartDto);
@@ -42,6 +46,19 @@ namespace E_MarketStore.Web.Controllers
             return View();
         }
 
+        [HttpPost]
+        public async Task<IActionResult> EmailCart(CartDto cartDto)
+        {
+            ResponseDto? response = await _cartService.EmailCart(cartDto);
+            if (response != null && response.IsSuccess)
+            {
+                TempData["success"] = "Email will be processed and sent shortly";
+                return RedirectToAction(nameof(CartIndex));
+            }
+            return View();
+        }
+
+        [HttpPost]
         public async Task<IActionResult> RemoveCoupon(CartDto cartDto)
         {
             cartDto.CartHeader.CouponCode = "";

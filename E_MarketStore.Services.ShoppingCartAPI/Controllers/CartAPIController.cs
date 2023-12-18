@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using E_MarketStore.MessageBus;
 using E_MarketStore.Services.ShoppingCartAPI.Data;
 using E_MarketStore.Services.ShoppingCartAPI.Models;
 using E_MarketStore.Services.ShoppingCartAPI.Models.DTO;
@@ -7,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection.PortableExecutable;
+using System.Runtime.CompilerServices;
 
 namespace E_MarketStore.Services.ShoppingCartAPI.Controllers
 {
@@ -19,14 +21,18 @@ namespace E_MarketStore.Services.ShoppingCartAPI.Controllers
         private readonly AppDbContext _db;
         private IProductService _productService;
         private ICouponService _couponService;
+        private readonly IMessageBus _messageBus;
+        private IConfiguration _configuration;
         
-        public CartAPIController(IMapper mapper, AppDbContext db, IProductService productService, ICouponService couponService)
+        public CartAPIController(IMapper mapper, AppDbContext db, IProductService productService, ICouponService couponService, IMessageBus messageBus, IConfiguration configuration)
         {
             this._response = new ResponseDto();
             _mapper = mapper;
             _db = db;
             _productService = productService;
             _couponService = couponService;
+            _messageBus = messageBus;
+            _configuration = configuration;
         }
 
 
@@ -91,6 +97,22 @@ namespace E_MarketStore.Services.ShoppingCartAPI.Controllers
             return _response;
         }
 
+
+        [HttpPost("EmailCartRequest")]
+        public async Task<object> EmailCartRequest([FromBody] CartDto cartDto)
+        {
+            try
+            {
+                await _messageBus.PublishMessage(cartDto, _configuration.GetValue<string>("TopicAndQueueNames:emailshoppingcart"));
+                _response.Result = true;
+            }
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.Message = ex.ToString();
+            }
+            return _response;
+        }
 
         [HttpPost("CartUpsert")]
         public async Task<ResponseDto> CartUpsert(CartDto cartDto)

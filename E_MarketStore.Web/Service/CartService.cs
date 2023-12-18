@@ -22,6 +22,16 @@ namespace E_MarketStore.Web.Service
             });
         }
 
+        public async Task<ResponseDto?> EmailCart(CartDto cartDto)
+        {
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = Enums.ApiType.POST,
+                Data = cartDto,
+                Url = Enums.ShoppingCartAPIBase + "/api/cart/EmailCartRequest"
+            });
+        }
+
         public async Task<ResponseDto?> GetCartByUserIdAsync(string userId)
         {
             return await _baseService.SendAsync(new RequestDto()
