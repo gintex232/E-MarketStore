@@ -78,3 +78,8 @@ C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.ShoppingCart
 C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.ShoppingCartAPI\obj\Debug\net7.0\E_MarketStore.Services.ShoppingCartAPI.genruntimeconfig.cache
 C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.ShoppingCartAPI\obj\Debug\net7.0\ref\E_MarketStore.Services.ShoppingCartAPI.dll
 C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.ShoppingCartAPI\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.ShoppingCartAPI\bin\Debug\net7.0\Azure.Core.Amqp.dll
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.ShoppingCartAPI\bin\Debug\net7.0\Azure.Messaging.ServiceBus.dll
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.ShoppingCartAPI\bin\Debug\net7.0\Microsoft.Azure.Amqp.dll
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.ShoppingCartAPI\bin\Debug\net7.0\E_MarketStore.MessageBus.dll
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.ShoppingCartAPI\bin\Debug\net7.0\E_MarketStore.MessageBus.pdb
