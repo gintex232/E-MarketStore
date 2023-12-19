@@ -24,6 +24,7 @@ namespace E_Market.Services.CouponAPI.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "ADMIN")]
         public ResponseDto Get()
         {
             try

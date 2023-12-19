@@ -103,7 +103,7 @@ namespace E_MarketStore.Services.ShoppingCartAPI.Controllers
         {
             try
             {
-                await _messageBus.PublishMessage(cartDto, _configuration.GetValue<string>("TopicAndQueueNames:emailshoppingcart"));
+                await _messageBus.PublishMessage(cartDto, _configuration.GetValue<string>("TopicAndQueueNames:Emailshoppingcart"));
                 _response.Result = true;
             }
             catch (Exception ex)
