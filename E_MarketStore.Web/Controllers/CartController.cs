@@ -51,7 +51,7 @@ namespace E_MarketStore.Web.Controllers
         {
             CartDto cart = await LoadCartDtoBasedOnLoggedInUser();
             cart.CartHeader.Email = User.Claims.Where(u => u.Type == JwtRegisteredClaimNames.Email)?.FirstOrDefault()?.Value;
-            ResponseDto? response = await _cartService.EmailCart(cartDto);
+            ResponseDto? response = await _cartService.EmailCart(cart);
             if (response != null && response.IsSuccess)
             {
                 TempData["success"] = "Email will be processed and sent shortly";

@@ -1,0 +1,7 @@
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MartketStore.Services.RewardAPI\obj\Debug\net7.0\E_MartketStore.Services.RewardAPI.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MartketStore.Services.RewardAPI\obj\Debug\net7.0\E_MartketStore.Services.RewardAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MartketStore.Services.RewardAPI\obj\Debug\net7.0\E_MartketStore.Services.RewardAPI.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MartketStore.Services.RewardAPI\obj\Debug\net7.0\E_MartketStore.Services.RewardAPI.AssemblyInfo.cs
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MartketStore.Services.RewardAPI\obj\Debug\net7.0\E_MartketStore.Services.RewardAPI.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MartketStore.Services.RewardAPI\obj\Debug\net7.0\E_MartketStore.Services.RewardAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MartketStore.Services.RewardAPI\obj\Debug\net7.0\E_MartketStore.Services.RewardAPI.MvcApplicationPartsAssemblyInfo.cache
