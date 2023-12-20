@@ -2,6 +2,6 @@
 {
     public interface IRewardService
     {
-        Task UpdateRewards(RewardsMessage rewardMessage);
+        //Task UpdateRewards(RewardsMessage rewardMessage);
     }
 }

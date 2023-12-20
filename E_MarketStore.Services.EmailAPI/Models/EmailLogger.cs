@@ -5,4 +5,5 @@
         string Email,
         string Message,
         DateTime? EmailSent);
+
 }

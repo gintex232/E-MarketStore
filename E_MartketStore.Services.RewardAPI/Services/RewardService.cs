@@ -1,12 +1,12 @@
 ﻿namespace E_MartketStore.Services.RewardAPI.Services
 {
-    public class RewardService : IRewardService
+    public class RewardService
     {
-        private readonly IRewardService _rewardService;
+        //private readonly IRewardService _rewardService;
 
-        public RewardService(IRewardService rewardService)
-        {
-            _rewardService = rewardService;
-        }
+        //public RewardService(IRewardService rewardService)
+        //{
+        //    _rewardService = rewardService;
+        //}
     }
 }
