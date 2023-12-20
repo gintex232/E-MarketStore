@@ -1,4 +1,6 @@
 using E_MarketStore.Services.EmailAPI.Data;
+using E_MarketStore.Services.EmailAPI.Extensions;
+using E_MarketStore.Services.EmailAPI.Messaging;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,11 +11,13 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+builder.Services.AddSingleton<IAzureServiceBusConsumer, AzureServiceBusConsumer>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 
 var app = builder.Build();
 
@@ -31,6 +35,8 @@ app.UseAuthorization();
 app.MapControllers();
 
 ApplyMigration();
+
+app.UseAzureServiceBusConsumer();
 
 app.Run();
 
