@@ -77,3 +77,7 @@ C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.EmailAPI\obj
 C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.EmailAPI\obj\Debug\net7.0\E_MarketStore.Services.EmailAPI.pdb
 C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.EmailAPI\obj\Debug\net7.0\E_MarketStore.Services.EmailAPI.genruntimeconfig.cache
 C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.EmailAPI\obj\Debug\net7.0\ref\E_MarketStore.Services.EmailAPI.dll
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.EmailAPI\bin\Debug\net7.0\Azure.Core.Amqp.dll
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.EmailAPI\bin\Debug\net7.0\Azure.Messaging.ServiceBus.dll
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.EmailAPI\bin\Debug\net7.0\Microsoft.Azure.Amqp.dll
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.EmailAPI\bin\Debug\net7.0\Newtonsoft.Json.dll
