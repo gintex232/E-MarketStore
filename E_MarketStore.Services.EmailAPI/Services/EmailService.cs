@@ -62,9 +62,10 @@ namespace E_MarketStore.Services.EmailAPI.Services
             throw new NotImplementedException();
         }
 
-        public Task RegisterUserEmailAndLog(string email)
+        public async Task RegisterUserEmailAndLog(string email)
         {
-            throw new NotImplementedException();
+            string message = "User Registration Successful. <br/> Email : " + email;
+            await LogAndEmail(message, "dotnetmastery@gmail.com");
         }
     }
 }
