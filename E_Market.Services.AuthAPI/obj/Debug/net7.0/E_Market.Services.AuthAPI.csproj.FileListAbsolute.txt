@@ -83,3 +83,9 @@ C:\Users\USER\Desktop\Projects\E-MarketStore\E_Market.Services.AuthAPI\obj\Debug
 C:\Users\USER\Desktop\Projects\E-MarketStore\E_Market.Services.AuthAPI\obj\Debug\net7.0\E_Market.Services.AuthAPI.pdb
 C:\Users\USER\Desktop\Projects\E-MarketStore\E_Market.Services.AuthAPI\obj\Debug\net7.0\E_Market.Services.AuthAPI.genruntimeconfig.cache
 C:\Users\USER\Desktop\Projects\E-MarketStore\E_Market.Services.AuthAPI\obj\Debug\net7.0\ref\E_Market.Services.AuthAPI.dll
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_Market.Services.AuthAPI\bin\Debug\net7.0\Azure.Core.Amqp.dll
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_Market.Services.AuthAPI\bin\Debug\net7.0\Azure.Messaging.ServiceBus.dll
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_Market.Services.AuthAPI\bin\Debug\net7.0\Microsoft.Azure.Amqp.dll
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_Market.Services.AuthAPI\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_Market.Services.AuthAPI\bin\Debug\net7.0\E_MarketStore.MessageBus.dll
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_Market.Services.AuthAPI\bin\Debug\net7.0\E_MarketStore.MessageBus.pdb

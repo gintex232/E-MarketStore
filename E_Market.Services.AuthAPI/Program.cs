@@ -4,6 +4,7 @@ using E_Market.Services.AuthAPI.Models;
 using E_Market.Services.AuthAPI.Models.Dto;
 using E_Market.Services.AuthAPI.Service;
 using E_Market.Services.AuthAPI.Service.IService;
+using E_MarketStore.MessageBus;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -19,36 +20,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
-//builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection("ApiSettings: JwtOptions"));
 
-builder.Services.AddSwaggerGen(); //options =>
-//{
-//    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-//    {
-//        Description = "Fast api",
-//        Name = "Authorization",
-//        Type = SecuritySchemeType.ApiKey,
-//        BearerFormat = "JWT",
-//        In = ParameterLocation.Header,
-//        Scheme = "Bearer"
-//    });
-//    options.AddSecurityRequirement(new OpenApiSecurityRequirement
-//    {
-//        {
-//            new OpenApiSecurityScheme
-//            {
-//                Reference = new OpenApiReference
-//                {
-//                    Type = ReferenceType.SecurityScheme,
-//                    Id = "Bearer"
-//                }
-//            },
-//            new string[] { }
-//        }
-//    });
-//});
-
-
+builder.Services.AddSwaggerGen(); 
 
 builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>() //as a bridge between entityframework core and identity
     .AddDefaultTokenProviders();
@@ -56,6 +29,7 @@ builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<A
 builder.Services.AddControllers();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
+builder.Services.AddScoped<IMessageBus, MessageBus>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

@@ -1,5 +1,6 @@
 ﻿using E_Market.Services.AuthAPI.Models.Dto;
 using E_Market.Services.AuthAPI.Service.IService;
+using E_MarketStore.MessageBus;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,10 +13,14 @@ namespace E_Market.Services.AuthAPI.Controllers
 
         private readonly IAuthService _authService;
         protected ResponseDto _responseDto;
-        public AuthController(IAuthService authService)
+        private readonly IMessageBus _messageBus;
+        private readonly IConfiguration _configuration;
+        public AuthController(IAuthService authService, IMessageBus messageBus, IConfiguration configuration)
         {
             _authService = authService;
             _responseDto = new();
+            _messageBus = messageBus;
+            _configuration = configuration;
         }
 
         [HttpPost("register")]
@@ -28,7 +33,7 @@ namespace E_Market.Services.AuthAPI.Controllers
                 _responseDto.Message = errorMessage;
                 return BadRequest(_responseDto);
             }
-
+            //await _messageBus.PublishMessage(model.Email, _configuration.GetValue<string>("TopicAndQueueNames:RegisterUserQueue"));
 
             return Ok(_responseDto);
         }
