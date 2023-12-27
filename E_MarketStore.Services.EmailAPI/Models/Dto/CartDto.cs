@@ -1,6 +1,8 @@
 ﻿namespace E_MarketStore.Services.EmailAPI.Models.Dto
 {
-    public record CartDto(
-        CartHeaderDto CartHeader,
-        IEnumerable<CartDetailsDto>? CartDetails);
+    public class CartDto
+    {
+        public CartHeaderDto CartHeader { get; set; }
+        public IEnumerable<CartDetailsDto>? CartDetails { get; set; }
+    }
 }

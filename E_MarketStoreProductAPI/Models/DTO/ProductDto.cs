@@ -1,12 +1,15 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.Identity.Client;
+using System.ComponentModel.DataAnnotations;
 
 namespace E_MarketStoreProductAPI.Models.DTO
 {
-    public record ProductDto(
-        int ProductId,
-        string Name,
-        double Price,
-        string Description,
-        string CategoryName,
-        string ImageUrl);
+    public class ProductDto
+    {
+        public int ProductId { get; set; }
+        public string Name { get; set; }
+        public double Price { get; set; }
+        public string Description { get; set; }
+        public string CategoryName { get; set; }
+        public string ImageUrl { get; set; }
+    }
 }
