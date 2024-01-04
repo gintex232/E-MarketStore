@@ -10,7 +10,7 @@ namespace E_MarketStore.MessageBus
 {
     public class MessageBus : IMessageBus
     {
-        private string connectionString = "Endpoint=sb://E_MarketStore.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=HjoslS58pPHtAULb0tay/jx4Ys0+MO5/R+ASbCcFTG0=";
+        private string connectionString = "Endpoint=sb://e-marketstoreweb.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=U3+6SLD5d7/xgY0pmrnPtFO/jX+PBV8qI+ASbO0UXYQ= ";
 
         public async Task PublishMessage(object message, string topic_queue_Name)
         {

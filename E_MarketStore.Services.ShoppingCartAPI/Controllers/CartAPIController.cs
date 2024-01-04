@@ -24,7 +24,8 @@ namespace E_MarketStore.Services.ShoppingCartAPI.Controllers
         private readonly IMessageBus _messageBus;
         private IConfiguration _configuration;
         
-        public CartAPIController(IMapper mapper, AppDbContext db, IProductService productService, ICouponService couponService, IMessageBus messageBus, IConfiguration configuration)
+        public CartAPIController(IMapper mapper, AppDbContext db, 
+            IProductService productService, ICouponService couponService, IMessageBus messageBus, IConfiguration configuration)
         {
             this._response = new ResponseDto();
             _mapper = mapper;

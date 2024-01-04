@@ -65,7 +65,7 @@ namespace E_MarketStore.Services.EmailAPI.Messaging
             CartDto objMessage = JsonConvert.DeserializeObject<CartDto>(body);
             try
             {
-                //TODO - try to log email
+                //try to log email
                 await _emailService.EmailCartAndLog(objMessage);
                 await args.CompleteMessageAsync(args.Message);
             }
