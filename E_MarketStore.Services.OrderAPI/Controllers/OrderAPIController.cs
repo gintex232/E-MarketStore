@@ -18,7 +18,7 @@ namespace E_MarketStore.Services.OrderAPI.Controllers
         private IMapper _mapper;
         private readonly AppDbContext _db;
         private IProductService _productService;
-        private OrderAPIController(AppDbContext db, IMapper mapper, IProductService productService)
+        public OrderAPIController(AppDbContext db, IMapper mapper, IProductService productService)
         {
             _db = db;
             _mapper = mapper;

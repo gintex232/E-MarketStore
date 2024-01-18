@@ -33,7 +33,7 @@ namespace E_Market.Services.AuthAPI.Controllers
                 _responseDto.Message = errorMessage;
                 return BadRequest(_responseDto);
             }
-            //await _messageBus.PublishMessage(model.Email, _configuration.GetValue<string>("TopicAndQueueNames:RegisterUserQueue"));
+            await _messageBus.PublishMessage(model.Email, _configuration.GetValue<string>("TopicAndQueueNames:RegisterUserQueue"));
 
             return Ok(_responseDto);
         }
