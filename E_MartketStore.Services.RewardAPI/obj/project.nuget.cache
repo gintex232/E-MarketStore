@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8XDgsEO2uQ8DcpE7Dx5/8lUFUYRRHbak+ZeOSu7t1uvYdfadWHWZH2VxgTj+Loh0W6eo2bSj21Zf+9xz3uwuEQ==",
+  "dgSpecHash": "kY3yfiv0YvDpL65f7KFj0w4FriWcJvBZvAIqysm4QmcDM4wnvTph9Jad7nQuBAanx+VZuSyvl93bY8sugzE7sg==",
   "success": true,
   "projectFilePath": "C:\\Users\\USER\\Desktop\\Projects\\E-MarketStore\\E_MartketStore.Services.RewardAPI\\E_MartketStore.Services.RewardAPI.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.12\\microsoft.aspnetcore.openapi.7.0.12.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.1\\microsoft.aspnetcore.openapi.8.0.1.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",

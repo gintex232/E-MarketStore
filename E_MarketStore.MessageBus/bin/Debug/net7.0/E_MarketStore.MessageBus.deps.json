@@ -8,14 +8,14 @@
     ".NETCoreApp,Version=v7.0": {
       "E_MarketStore.MessageBus/1.0.0": {
         "dependencies": {
-          "Azure.Messaging.ServiceBus": "7.17.0",
+          "Azure.Messaging.ServiceBus": "7.17.2",
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
           "E_MarketStore.MessageBus.dll": {}
         }
       },
-      "Azure.Core/1.36.0": {
+      "Azure.Core/1.37.0": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
           "System.Diagnostics.DiagnosticSource": "6.0.1",
@@ -27,14 +27,14 @@
         },
         "runtime": {
           "lib/net6.0/Azure.Core.dll": {
-            "assemblyVersion": "1.36.0.0",
-            "fileVersion": "1.3600.23.56006"
+            "assemblyVersion": "1.37.0.0",
+            "fileVersion": "1.3700.24.6103"
           }
         }
       },
       "Azure.Core.Amqp/1.3.0": {
         "dependencies": {
-          "Microsoft.Azure.Amqp": "2.6.3",
+          "Microsoft.Azure.Amqp": "2.6.4",
           "System.Memory": "4.5.4",
           "System.Memory.Data": "1.0.2"
         },
@@ -45,26 +45,26 @@
           }
         }
       },
-      "Azure.Messaging.ServiceBus/7.17.0": {
+      "Azure.Messaging.ServiceBus/7.17.2": {
         "dependencies": {
-          "Azure.Core": "1.36.0",
+          "Azure.Core": "1.37.0",
           "Azure.Core.Amqp": "1.3.0",
-          "Microsoft.Azure.Amqp": "2.6.3",
+          "Microsoft.Azure.Amqp": "2.6.4",
           "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
           "System.Memory.Data": "1.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Azure.Messaging.ServiceBus.dll": {
-            "assemblyVersion": "7.17.0.0",
-            "fileVersion": "7.1700.23.56401"
+            "assemblyVersion": "7.17.2.0",
+            "fileVersion": "7.1700.224.6601"
           }
         }
       },
-      "Microsoft.Azure.Amqp/2.6.3": {
+      "Microsoft.Azure.Amqp/2.6.4": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.Azure.Amqp.dll": {
             "assemblyVersion": "2.4.0.0",
-            "fileVersion": "2.6.3.0"
+            "fileVersion": "2.6.4.0"
           }
         }
       },
@@ -115,12 +115,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Azure.Core/1.36.0": {
+    "Azure.Core/1.37.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-vwqFZdHS4dzPlI7FFRkPx9ctA+aGGeRev3gnzG8lntWvKMmBhAmulABi1O9CEvS3/jzYt7yA+0pqVdxkpAd7dQ==",
-      "path": "azure.core/1.36.0",
-      "hashPath": "azure.core.1.36.0.nupkg.sha512"
+      "sha512": "sha512-ZSWV/ftBM/c/+Eo2hlzeEWntjqNG+8TWXX/DAKjBSWIf7nEvFILQoJL7JZx5HjypDvdNUMj5J2ji8ZpFFSghSg==",
+      "path": "azure.core/1.37.0",
+      "hashPath": "azure.core.1.37.0.nupkg.sha512"
     },
     "Azure.Core.Amqp/1.3.0": {
       "type": "package",
@@ -129,19 +129,19 @@
       "path": "azure.core.amqp/1.3.0",
       "hashPath": "azure.core.amqp.1.3.0.nupkg.sha512"
     },
-    "Azure.Messaging.ServiceBus/7.17.0": {
+    "Azure.Messaging.ServiceBus/7.17.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lpQXW+8IsTsCp8hvMIiqcp0oLYgxc79g7ALYUOOXiZy/3WORlaN237eNx0LCX40wTo7hLtdbVrmoUa+kIohGpg==",
-      "path": "azure.messaging.servicebus/7.17.0",
-      "hashPath": "azure.messaging.servicebus.7.17.0.nupkg.sha512"
+      "sha512": "sha512-TvmQ+qBchdxl/e5H5dtocqe/x4dsddK6vL98YYP/Ip/t5T7twBMsDV2TUbR4fP/VWOo/XU+niArIv4vRjchkgQ==",
+      "path": "azure.messaging.servicebus/7.17.2",
+      "hashPath": "azure.messaging.servicebus.7.17.2.nupkg.sha512"
     },
-    "Microsoft.Azure.Amqp/2.6.3": {
+    "Microsoft.Azure.Amqp/2.6.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-iPbNNII4YZGkka7JQS0ZsZfZLcM7dwIoov/DyFiaemRqOTrdJCLgYnFBFhc/3TSh0ZI4/5TpxQPSPSckZ65jmA==",
-      "path": "microsoft.azure.amqp/2.6.3",
-      "hashPath": "microsoft.azure.amqp.2.6.3.nupkg.sha512"
+      "sha512": "sha512-Xf2mbwTSuUtqRlULKXCEuXPxlBhZzZXWmMxnxF64WJAelo3PA7kIDR4Bv+eOBYxHyr3FJtwG3/7rrhyXIx1Qzg==",
+      "path": "microsoft.azure.amqp/2.6.4",
+      "hashPath": "microsoft.azure.amqp.2.6.4.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "type": "package",

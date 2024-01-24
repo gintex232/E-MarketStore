@@ -19,7 +19,7 @@ namespace E_MarketStore.Web.Service
             {
                 ApiType = Enums.ApiType.POST,
                 Data = cartDto,
-                Url = Enums.OrderAPIBase + "/api/order/createOrder"
+                Url = Enums.OrderAPIBase + "/api/order/CreateOrder"
             });
         }
     }

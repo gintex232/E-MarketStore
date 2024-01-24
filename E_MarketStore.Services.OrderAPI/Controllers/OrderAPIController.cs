@@ -39,6 +39,9 @@ namespace E_MarketStore.Services.OrderAPI.Controllers
 
                 OrderHeader orderCreated = _db.OrderHeaders.Add(_mapper.Map<OrderHeader>(orderHeaderDto)).Entity;
                 await _db.SaveChangesAsync();
+
+                orderHeaderDto.OrderHeaderId = orderCreated.OrderHeaderId;
+                _response.Result = orderHeaderDto;
             }
             catch (Exception ex)
             {
