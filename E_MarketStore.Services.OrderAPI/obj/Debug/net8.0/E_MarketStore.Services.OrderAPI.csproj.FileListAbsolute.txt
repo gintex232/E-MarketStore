@@ -145,3 +145,4 @@ C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.OrderAPI\obj
 C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.OrderAPI\obj\Debug\net8.0\E_MarketStore.Services.OrderAPI.pdb
 C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.OrderAPI\obj\Debug\net8.0\E_MarketStore.Services.OrderAPI.genruntimeconfig.cache
 C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.OrderAPI\obj\Debug\net8.0\ref\E_MarketStore.Services.OrderAPI.dll
+C:\Users\USER\Desktop\Projects\E-MarketStore\E_MarketStore.Services.OrderAPI\bin\Debug\net8.0\Stripe.net.dll

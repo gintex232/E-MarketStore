@@ -22,5 +22,15 @@ namespace E_MarketStore.Web.Service
                 Url = Enums.OrderAPIBase + "/api/order/CreateOrder"
             });
         }
+
+        public async Task<ResponseDto?> CreateStripeSession(StripeRequestDto stripeRequestDto)
+        {
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = Enums.ApiType.POST,
+                Data = stripeRequestDto,
+                Url = Enums.OrderAPIBase + "/api/order/CreateStripeSession"
+            });
+        }
     }
 }

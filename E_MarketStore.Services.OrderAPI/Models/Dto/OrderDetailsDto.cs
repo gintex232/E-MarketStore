@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
+﻿
 namespace E_MarketStore.Services.OrderAPI.Models.Dto
 {
     public class OrderDetailsDto
