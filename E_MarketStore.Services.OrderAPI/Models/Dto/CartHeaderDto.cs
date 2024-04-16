@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿
 
 namespace E_MarketStore.Services.OrderAPI.Models.Dto
 {

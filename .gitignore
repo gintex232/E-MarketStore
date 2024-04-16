@@ -2,4 +2,6 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/E-MarketStore.sln
+
+
+.vs/E-MarketStore/FileContentIndex/009421c2-29ce-4d26-8b4b-9018e37cdb83.vsidx
